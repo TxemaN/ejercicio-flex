@@ -1,0 +1,43 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+img {
+    width: 100%;
+}
+h2 {
+    text-align: center;
+}
+h3 {
+    background-color: blue;
+}
+p{
+    text-align: center;
+}
+
+.flexContainer {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.flexContainer>* {
+    width: calc(80% - 20px);
+}
+
+@media screen and (min-width: 768px) {
+    .flexContainer>* {
+        width: calc(50% - 20px);
+
+    }
+}
+
+@media screen and (min-width: 922px) {
+    .flexContainer>* {
+        width: calc(33% - 20px);
+
+    }
+}
